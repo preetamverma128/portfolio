@@ -1,38 +1,73 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+:root{
+    --primary-white: #fff;
+    --primary-organce: #f9ab00;
+    --primary-dark: rgba(255,255,255,0);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+    font-family: "Roboto Condesed" sans-serif
 }
+  /********************************** NAVBAR *****************************/
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  .logo {
+    width: 10.25rem;
+    height: 5rem;
   }
+
+/********************************** NAVBAR *****************************/
+
+nav a.App-link{
+    font-weight: 500;
+    letter-spacing: 0.6px;
+    cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+nav ul li {
+    text-transform: uppercase;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar-nav > li >a {
+    color: var(--primary-white) !important;
+    margin-right: 1.1rem;
+    border-top: .0375rem solid var(--primary-dark);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar-brand {
+    max-width: 12.25rem;
+    padding: 0 !important;
+    height: 5rem;
+
+}
+
+.navbar-brand > li > a.active, .navbar-nav >li >a:focus{
+    border-top: .0375rem solid var(--primary-organce);
+
+}
+
+.navbar-nav > li >a:hover{
+    border-top: .0375rem solid var(--primary-organce);
+}
+
+.header-wraper {
+    position: relative;
+    background: #fff;
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    font-family: "Roboto Condesed" sans-serif
+}
+
+.main-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-info h1 {
+    color : var(--primary-organce);
+    text-transform: uppercase;
 }
